@@ -1,4 +1,4 @@
-// Секция Героя
+// Секция HERO
 
 .hero {
   max-width: 1600px;
@@ -13,7 +13,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mobile/hero-480@1x.jpg);
+    url(../images/hero/hero_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,7 +26,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/mobile/hero-480@2x.jpg);
+      url(../images/hero/hero_mob2x.jpg);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -35,7 +35,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/tablet/hero-768@1x.jpg);
+      url(../images/hero/hero_tab.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -45,7 +45,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/tablet/hero-768@2x.jpg);
+        url(../images/hero/hero_tab2x.jpg);
     }
   }
 
@@ -57,7 +57,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/desktop/hero-1200@1x.jpg);
+      url(../images/hero/hero.jpg);
 
           @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -67,12 +67,12 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/desktop/hero-1200@2x.jpg);
+        url(../images/hero/hero2x.jpg);
     }
   }
 }
 
-// Обёртка вокруг заголовка и кнопки
+// Обёртка для секции HERO
 
 .hero__content {
   max-width: 360px;
@@ -89,7 +89,7 @@
   text-align: center;
 }
 
-// Тайтл Героя
+// заголовок в HERO
 
 .hero__title {
   margin-top: 0;
@@ -99,13 +99,21 @@
 
   @include font(900, 26px, 1.62);
 
+  @media screen and (max-width: 479px) {
+    @include font(900, 24px, 1.36);
+
   @media screen and (min-width: 1200px) {
     @include font(900, 44px, 1.36);
   }
+  }
+
+
+
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 
 // Кнопка "Заказать услугу"
 

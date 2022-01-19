@@ -72,8 +72,8 @@
   }
 
   &:not(:placeholder-shown):focus:invalid {
-    color: tomato;
-    border-color: tomato;
+    color: green;
+    border-color: green;
   }
 }
 
